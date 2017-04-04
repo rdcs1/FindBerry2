@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main">
+
+
+    <item android:id="@+id/central"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/maps"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item android:id="@+id/deliver"
+        android:icon="@drawable/ic_directions_run_black_24dp"
+        android:title="@string/deliv"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+
+    <item
+        android:id="@+id/miPerfil"
+        android:title="@string/miPerfi"
+        />
+
+
+
+    <item
+        android:id="@+id/mLogOut"
+        android:title="@string/cerrarSesion"
+        />
+
+</menu>
