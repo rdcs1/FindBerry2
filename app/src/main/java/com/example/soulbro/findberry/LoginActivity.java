@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(prefs.getInt("login",-1)==1)
         { //quiere decir que hay alguien logueado
-            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this,MainTActivity.class);
             intent.putExtra("username",username);
             intent.putExtra("password",password);
             intent.putExtra("correo",correo);
@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                     if(etPass.getText().toString().equals(password)){
                         editor.putInt("login",1); //1 hay alguien logeado, 0 noo hay logueado
                         editor.commit();
-                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this,MainTActivity.class);
                         intent.putExtra("username",username);
                         intent.putExtra("correo",correo);
                         startActivity(intent);
