@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor"
+    tools:context="com.example.soulbro.findberry.DeliveryFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="159dp"
+            android:src="@drawable/pr"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/dnameid"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:text="Un nombre Cualquiera "/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11sp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11sp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11sp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11sp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11sp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablerun"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Pedidos Pendientes"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Usuario"
+
+                />
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Ver pedido"
+
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/p1"
+                android:textColor="@color/black"
+                android:padding="3dip"
+                android:textStyle="italic"
+                android:text="La migueria "
+                android:gravity="center"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/user1"
+                android:textColor="@color/black"
+                android:padding="3dip"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:text="El varo "
+                android:gravity="center"
+                />
+
+
+            <Button
+                android:id="@+id/vp1"
+                android:onClick="clic"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Ver"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/p2"
+                android:textColor="@color/black"
+                android:padding="3dip"
+                android:textStyle="italic"
+                android:text="Arboreo "
+                android:gravity="center"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/user2"
+                android:textColor="@color/black"
+                android:padding="3dip"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:text="David "
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/vp2"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Ver"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/tabledespleg"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Usuario"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/nomuser"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="El varo"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Producto"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:id="@+id/product"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Pan de Chocolate"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Lugar"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:id="@+id/place"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="La migueria"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Precio"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:id="@+id/cost"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="9.000 "
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:padding="3dip"
+                android:gravity="center"
+                android:text="Recorrido"
+                />
+
+            <Button
+                android:id="@+id/recorrido"
+                android:text="Ver"
+                android:gravity="center"
+                />
+
+        </TableRow>
+
+
+
+
+
+
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>
+</FrameLayout>

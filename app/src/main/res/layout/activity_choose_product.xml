@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor"
+    android:orientation="vertical"
+    tools:context="com.example.soulbro.findberry.FoodActivity">
+
+
+   <ImageView
+       android:id="@+id/im"
+       android:layout_marginTop="21sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/arbo"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+   <TableLayout
+       android:layout_marginTop="15sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/tablegeneral"
+       android:stretchColumns="1">
+
+      <TableRow>
+
+         <TextView
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:padding="3dip"
+             android:gravity="center"
+             android:text="Función"
+             />
+
+         <TextView
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:padding="3dip"
+             android:gravity="center"
+             android:text="Locación"
+
+             />
+
+
+         <TextView
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:padding="3dip"
+             android:gravity="center"
+             android:text="Cantidad"
+
+             />
+      </TableRow>
+
+      <TableRow>
+
+         <EditText
+             android:id="@+id/fun1"
+             android:textColor="@color/black"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:hint="Pelicula deseada"
+             android:gravity="center"
+             android:textSize="16sp"
+             />
+
+         <EditText
+             android:id="@+id/loc1"
+             android:textColor="@color/black"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:textSize="16sp"
+             android:hint="Preferencia o Normal"
+             android:gravity="center"
+             />
+
+
+         <EditText
+             android:id="@+id/vc1"
+             android:hint="Cantidad"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:gravity="center"
+             />
+      </TableRow>
+
+      <TableRow>
+
+         <EditText
+             android:id="@+id/func2"
+             android:textColor="@color/black"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:hint="Pelicula deseada"
+             android:gravity="center"
+             android:textSize="16sp"
+             />
+
+         <EditText
+             android:id="@+id/loc2"
+             android:textColor="@color/black"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:textSize="16sp"
+             android:hint="Preferencia o Normal"
+             android:gravity="center"
+             />
+
+
+         <EditText
+             android:id="@+id/vc2"
+             android:hint="Cantidad"
+             android:padding="3dip"
+             android:textStyle="italic"
+             android:gravity="center"
+             />
+      </TableRow>
+
+   </TableLayout>
+
+   </LinearLayout>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:id="@+id/confirmar"
+       android:layout_marginTop="20sp"
+       android:layout_height="wrap_content"
+       android:text="Confirmar"
+       android:layout_gravity="center"/>
+
+</LinearLayout>

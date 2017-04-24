@@ -9,9 +9,7 @@ import android.widget.ImageView;
 public class ChooseProduct extends AppCompatActivity {
 
     Intent intent;
-    String proci="";
-    String royal="";
-    String eventos;
+    String flag="";
     ImageView imagen;
 
     @Override
@@ -19,25 +17,28 @@ public class ChooseProduct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_product);
 
-
-        Bundle extras = getIntent().getExtras(); //me permite almacenar los extras, recibe la info del intent
-        proci = extras.getString("proci"); //recibo la info proveniente
-        royal  = extras.getString("royal");
-        //eventos = extras.getString("event");
         imagen=(ImageView) findViewById(R.id.im);
 
+        Bundle extras = getIntent().getExtras(); //me permite almacenar los extras, recibe la info del intent
+        flag = extras.getString("flag_op"); //recibo la info proveniente
 
 
-        if (proci != "")
+        switch (flag)
         {
-            proci = "";
-            imagen.setImageResource(R.drawable.procinal);
+            case "0":
+                imagen.setImageResource(R.drawable.procinal);
+                break;
+            case "1":
+                imagen.setImageResource(R.drawable.royal);
+                break;
         }
-        else if(royal != "" )
-        {
 
-            imagen.setImageResource(R.drawable.royal);
-        }
+
+
+
+
+
+
 
     }
 }

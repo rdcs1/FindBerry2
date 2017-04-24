@@ -16,9 +16,7 @@ public class FunActivity extends AppCompatActivity {
     private RecyclerView recycler;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
-    String proc="";
-    String royal="";
-    String event="";
+    String flag_op="";
     Intent intent;
 
     @Override
@@ -58,22 +56,17 @@ public class FunActivity extends AppCompatActivity {
                         {
                             case 0:
                                 intent = new Intent(FunActivity.this,ChooseProduct.class);
-                                proc = "p";
-                                royal = "";
-                                intent.putExtra("proc",proc);
-                                intent.putExtra("royal",royal);
-                                //intent.putExtra("event",event);
+                                flag_op="0";
+                                intent.putExtra("flag_op",flag_op);
                                 startActivity(intent);
-                                Toast.makeText(getApplicationContext(),proc,Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(),proc,Toast.LENGTH_SHORT).show();
                                 break;
                             case 1:
                                 intent = new Intent(FunActivity.this,ChooseProduct.class);
-                                royal="r";
-                                proc ="";
-                                intent.putExtra("royal",royal);
-                                intent.putExtra("proc",proc);
+                                flag_op="1";
+                                intent.putExtra("flag_op",flag_op);
                                 startActivity(intent);
-                                Toast.makeText(getApplicationContext(),royal ,Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(),royal ,Toast.LENGTH_SHORT).show();
                                 break;
                             case 2:
                                 Toast.makeText(getApplicationContext(),"Eventos",Toast.LENGTH_SHORT).show();
