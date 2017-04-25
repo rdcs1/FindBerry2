@@ -17,6 +17,8 @@ public class FoodActivity extends AppCompatActivity {
     private RecyclerView recycler;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
+    String flag_des="";
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,13 +60,23 @@ public class FoodActivity extends AppCompatActivity {
                         switch (position)
                         {
                             case 0:
-                                Toast.makeText(getApplicationContext(),"De lolita",Toast.LENGTH_SHORT).show();
+                                intent = new Intent(FoodActivity.this,OptionsFoodActivity.class);
+                                flag_des="0";
+                                intent.putExtra("flag_des",flag_des);
+                                startActivity(intent);
+                                //Toast.makeText(getApplicationContext(),"De lolita",Toast.LENGTH_SHORT).show();
                                 break;
                             case 1:
-                                Toast.makeText(getApplicationContext(),"El que sigue que toma",Toast.LENGTH_SHORT).show();
+                                intent = new Intent(FoodActivity.this,OptionsFoodActivity.class);
+                                flag_des="1";
+                                intent.putExtra("flag_des",flag_des);
+                                startActivity(intent);
                                 break;
                             case 2:
-                                Toast.makeText(getApplicationContext(),"Arbóreo",Toast.LENGTH_SHORT).show();
+                                intent = new Intent(FoodActivity.this,OptionsFoodActivity.class);
+                                flag_des="2";
+                                intent.putExtra("flag_des",flag_des);
+                                startActivity(intent);
                                 break;
                         }
 

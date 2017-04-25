@@ -69,7 +69,11 @@ public class FunActivity extends AppCompatActivity {
                                 //Toast.makeText(getApplicationContext(),royal ,Toast.LENGTH_SHORT).show();
                                 break;
                             case 2:
-                                Toast.makeText(getApplicationContext(),"Eventos",Toast.LENGTH_SHORT).show();
+                                intent = new Intent(FunActivity.this,ChooseProduct.class);
+                                flag_op="2";
+                                intent.putExtra("flag_op",flag_op);
+                                startActivity(intent);
+                                //Toast.makeText(getApplicationContext(),"Eventos",Toast.LENGTH_SHORT).show();
                                 break;
                         }
 
