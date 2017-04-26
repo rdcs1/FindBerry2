@@ -47,7 +47,7 @@
         <activity android:name=".AcademicActivity" />
         <activity android:name=".ChooseProduct" />
         <activity android:name=".OptionsFoodActivity" />
-        <activity android:name=".OptionsAcademic_Activity"></activity>
+        <activity android:name=".OptionsAcademic_Activity"/>
     </application>
 
 </manifest>

@@ -15,9 +15,8 @@
         <ImageView
             android:id="@+id/ivOpCardImage"
             android:layout_width="0dp"
-            android:layout_weight="0.63"
-            android:layout_marginTop="35sp"
-            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginTop="35dp"
             android:layout_height="match_parent"
             android:src="@drawable/acad"/>
 
@@ -31,30 +30,35 @@
                 android:id="@+id/tvCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"/>
+                android:layout_marginTop="35dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp">
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15sp"
                     android:src="@drawable/ic_favorite_black_24dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_favorite_black_24dp" />
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_favorite_black_24dp" />
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_favorite_black_24dp" />
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_favorite_black_24dp" />
             </LinearLayout>

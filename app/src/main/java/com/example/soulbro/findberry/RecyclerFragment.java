@@ -39,7 +39,7 @@ public class RecyclerFragment extends Fragment {
         List<Componentes> items = new ArrayList<>(); //Inicializo mi lista de componentes
 
         //Defino que va a llevar cada molde de lo que cree con el recyclerview
-        items.add(new Componentes(R.drawable.food," Alimentacion")); //Alimentacion
+        items.add(new Componentes(R.drawable.food," Alimentación")); //Alimentacion
         items.add(new Componentes(R.drawable.acad," Académico")); //Academico
         items.add(new Componentes(R.drawable.ocio,"Ocio y Otros")); //Ocio y otros
 

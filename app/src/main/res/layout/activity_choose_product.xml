@@ -25,16 +25,14 @@
           android:id="@+id/evento"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:textStyle="italic"
           android:textAlignment="center"
           android:layout_gravity="center"
-          android:hint="Ingrese el evento deseado"/>
+          android:hint="Evento deseado"/>
 
       <EditText
           android:id="@+id/cant"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:textStyle="italic"
           android:hint="Cantidad"
           android:inputType="number"
           android:textAlignment="center"
@@ -44,8 +42,7 @@
           android:id="@+id/descrip"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:textStyle="italic"
-          android:hint="Descripción (Hora,fecha,Tipo de Evento,Preferencias)"
+          android:hint="Descripción (Hora, fecha, tipo de evento, preferencias)"
           android:textAlignment="center"/>
 
    </LinearLayout>
